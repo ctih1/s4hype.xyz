@@ -1,4 +1,6 @@
-
+body {
+    background: #1c1c1c
+}
 
 
 .card {
@@ -15,6 +17,10 @@
 }
 
 @media (hover: hover) {
+    :is(button,img,text,svg,button,input,h1,p,pre) {
+        opacity:0.3;
+        transition: opacity 0.3s ease;
+    }
     .hoverable:hover {
         box-shadow: rgba(100, 100, 111, 0.2) 0px 1rem 3rem 0px;
     }
@@ -27,6 +33,9 @@
         }
         background-color: rgba(0, 0, 0, 0.15);
     }
+    body {
+        background: linear-gradient(45deg, #00000b, #020000)
+    }
 
   }
 
@@ -38,10 +47,7 @@
     font-family: Arial, Helvetica, sans-serif;
     color:rgb(255, 255, 255);
 }
-:is(button,img,text,svg,button,input,h1,p,pre) {
-    opacity:0.15;
-    transition: opacity 0.3s ease;
-}
+
 .bigText {
     font-size: 3rem;
 }
@@ -161,6 +167,3 @@ button {
     }
   }
 
-  body {
-    background: linear-gradient(45deg, #00001f, #230000)
-}
