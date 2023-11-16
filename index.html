@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html land="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The official website for @_s4hype_">
+    <meta name="keywords" content="s4hype, website, s4hype website">
+    <meta name="author" content="@_s4hype_">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s4hype</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div class="wrapper-main">
+        <div class="info card hoverable rise shadow" onclick="secret();">
+            <img class="shadow" alt="@_s4hype_ profile picture" draggable="false" id="profilePicture" src="https://i.ibb.co/R7vtGCx/s4hype-profile.jpg">
+            <h1 class="bigText important text">Hello! I'm s4hype!</h1>
+            <p class="text">Now meant for mobile! Please do not use Safari.</p>
+            <p class="text">Code <a target="_blank" href="https://codepen.io/ctih/pen/GRPOONK">here</a></p>
+            <p id="secretP" style="font-size: 0.8rem;"class="text">What could be here...</p>
+        </div>
+
+        <div class="devices card hoverable rise shadow">
+            <img class="shadow"alt="Devices On a Table"draggable="false" id="devicePicture" src="https://i.ibb.co/Vjyb0Zb/The-Best-Phones-to-buy-in-2023-our-top-10-list.jpg">
+            <h1 class="bigText important text">Devices</h1>
+            <p class="text description">Currently using: iPhone XS  64GB (iOS 17)</p>
+            <p class="text description">Full list of my devices can be found <a target="_blank" href="https://pastebin.com/9zXUaZFA">here</a></p>
+        </div>
+
+        <div class="comments card hoverable rise shadow">
+            <h1 id="commentInfo" class="text important bigText">Comments</h1>
+            <div class="sendComments">
+                <input id="username" class="text commentElement shadow hoverable"placeholder="Username">
+                <input id="comment" class="text commentElement shadow hoverable"placeholder="Comment">
+                <button onclick="sendComment(this);"style="margin-top:0.5rem;" id="send" class="commentElement text shadow hoverable">Send</button>
+            </div>
+
+            <div class="recieveComments">
+                <p id="review" class="text important mediumText">Loading...</p>
+                <button onclick="toggleComment(this);" id="like" class="commentElement text shadow hoverable">Like</button>
+            </div>
+        </div>
+
+        <div class="contact card hoverable rise shadow">
+            <img alt="Contact Image" draggable="false" id="contactPicture" src="contact.svg">
+            <h1 class="bigText important text">Contact</h1>
+            <pre id="contactText" class="text description">
+                Discord: ctih
+                Email: me@s4hype.xyz
+                TikTok: s4hype.xyz/tiktok
+            </pre>
+        </div>
+    </div>
+</body>
