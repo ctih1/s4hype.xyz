@@ -22,18 +22,25 @@
         transform: translateY(-1vh);
     }
     .card:hover {
+        :is(button,img,svg,button,input,h1,p,pre) {
+            opacity:1;
+        }
         background-color: rgba(0, 0, 0, 0.15);
     }
+
   }
 
 .shadow {
     box-shadow: rgba(73, 73, 77, 0.2) 0px 0.5rem 1.5rem 0px;
 }
 
-.text {
-    mix-blend-mode: overlay; /*Why doesnt it just stay as the half opaque color????*/
+.text {  
     font-family: Arial, Helvetica, sans-serif;
     color:rgb(255, 255, 255);
+}
+:is(button,img,text,svg,button,input,h1,p,pre) {
+    opacity:0.15;
+    transition: opacity 0.3s ease;
 }
 .bigText {
     font-size: 3rem;
@@ -82,6 +89,7 @@ button {
 }
 
 #contactPicture {
+    mix-blend-mode: overlay; 
     width: 10rem;
     filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(113deg) brightness(105%) contrast(101%);
 }
