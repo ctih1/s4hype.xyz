@@ -34,7 +34,7 @@ body {
         background-color: rgba(0, 0, 0, 0.15);
     }
     body {
-        background: linear-gradient(45deg, #00000b, #020000)
+        background: linear-gradient(45deg, #000019, #090000)
     }
 
   }
@@ -95,7 +95,6 @@ button {
 }
 
 #contactPicture {
-    mix-blend-mode: overlay; 
     width: 10rem;
     filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(113deg) brightness(105%) contrast(101%);
 }
