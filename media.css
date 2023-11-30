@@ -1,0 +1,78 @@
+@media only screen and (max-width: 580px) {
+    .bigText {
+        font-size: 1.5rem;
+    }
+    .description {
+        font-size: 0.75rem;
+    }
+    button {
+        border-radius: 0.25rem;
+        height: 2rem;
+        font-size: 2rem;
+    }
+    input {
+        border-radius: 0.25rem;
+        height: 1rem;
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .bigText {
+        font-size: 2rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+    button {
+        border-radius: 0.5rem;
+        height: 4rem;
+        font-size: 2rem
+    }
+    input {
+        border-radius: 0.5rem;
+        height: 2rem;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #devicePicture {
+        width: 80%;
+        height:80%;
+    }
+
+    #profilePicture {
+        width: 80%;
+        height:80%;
+    }
+    button {
+        font-size: 1.5rem;
+    }
+    input {
+        font-size: 1.5rem;
+    }
+}
+
+@media (hover: hover) {
+    :is(button,img,text,svg,button,input,h1,p,pre) {
+        opacity:0.3;
+        transition: opacity 0.3s ease;
+    }
+    .hoverable:hover {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 1rem 3rem 0px;
+    }
+    .rise:hover {
+        transform: translateY(-1vh);
+    }
+    .card:hover {
+        :is(button,img,svg,button,input,h1,p,pre) {
+            opacity:0.9;
+        }
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+    body {
+        background: linear-gradient(0deg, #000018, #0b000c)
+    }
+
+  }
